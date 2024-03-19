@@ -5,9 +5,82 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Journey Junction</title>
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the header */
+        .header {
+            background-image: linear-gradient(to right, rgb(86, 14, 144), rgb(196, 153, 225));;
+            padding: 10px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            width: 100%;
+        }
+
+        /* Optional: Style for the logo */
+        .header img {
+            max-width: 150px;
+            max-height: 150px;
+            margin-left: 50px;
+        }
+
+         /* Style for the welcome section */
+         .welcome-section {
+            background-image: url('bg.jpg'); 
+            background-size: cover; 
+            height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .welcome-text {
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 48px; 
+            font-family: "Arial", sans-serif; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .welcome-text h1 {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .welcome-text p {
+            margin: 10px 0 0 0;
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="header" >
+            <img src="Logo demo.png" alt="Logo" style="max-width: 150px; max-height: 150px;" >
+        </div>
 
+        <div class="body">
+            <div class="welcome-section">
+                <div class="welcome-text">
+                    <h1>Welcome to Journey Junction</h1>
+                    <p>Come along on a delightful
+                        adventure where stories unfold
+                        and hearts unite.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 </body>
 </html>
