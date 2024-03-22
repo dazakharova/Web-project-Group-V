@@ -4,147 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Journey Junction</title>
 </head>
-  <style>
-    body, html {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Style for the header */
-    .header {
-        background-image: linear-gradient(to right, rgb(86, 14, 144), rgb(196, 153, 225));;
-        padding: 10px;
-        margin: 0;
-        display: flex;
-        justify-content: space-between; 
-        align-items: center; 
-        width: 100%;
-    }
-
-    /* Optional: Style for the logo */
-    .header img {
-        max-width: 150px;
-        max-height: 150px;
-        margin-left: 50px;
-    }
-
-     /* Style for the welcome section */
-     .welcome-section {
-        background-image: url('bg pic.jpg'); 
-        background-size: cover; 
-        height: 100vh; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: white;
-    }
-
-    .welcome-text {
-        background-color: rgba(0, 0, 0, 0.5); 
-        padding: 20px;
-        border-radius: 10px;
-        font-size: 48px; 
-        font-family: "Arial", sans-serif; 
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
-    .welcome-text h1 {
-        margin: 0;
-        font-weight: bold;
-    }
-
-    .welcome-text p {
-        margin: 10px 0 0 0;
-        font-size: 24px;
-    }
-
-    /* Style for the image and text container (About Section) */
-    .about {
-    margin-top: 50px; 
-    animation: slideUp 1s ease-in-out; 
-    }
-
-    /* Style for the image and text container */
-    .image-text-container {
-    display: flex; 
-    width: 80%;  
-    margin: 0 auto;  
-    background-image: linear-gradient(to right, #6C36BD, #9370DB); 
-    padding: 20px;
-    border-radius: 10px;
-    color: white; 
-    }
-
-    /* Style for the image */
-    .image-text-container img {
-    width: 30%;  
-    object-fit: cover;  
-    }
-
-   /* Style for the text content (About Section) */
-    .image-text-container .text-content {
-    width: 70%; 
-    padding: 0 20px; 
-    font-size: 20px; 
-    line-height: 1.5; 
-    font-family: serif; 
-    }
-
-    .text-content h1 {
-    margin: 0;
-    font-size: 28px; 
-    font-weight: bold;
-    }
-
-    /* Style for the footer */
-    .footer {
-    background-image: linear-gradient(to right, #7F0B7F, #420542);
-    color: white; 
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px;
-    }
-
-</style>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <img src="logo dem.jpg" alt="Logo" style="max-width: 150px; max-height: 90px;">
-    </div>
-
-    <div class="body">
-      <div class="welcome-section">
-        <div class="welcome-text">
-          <h1>Welcome to Journey Junction</h1>
-          <p>Come along on a delightful adventure where stories unfold and hearts unite.</p>
-        </div>
+  <header>
+      <div class="logo">
+        <img src="./images/logos/logo.jpg" alt="Your Website Logo">
+        
       </div>
-    </div>
+      <h1 class="title">Journey Junction</h1>
 
-    <div class="about">
-      <div class="image-text-container">
-        <img src="image.jpg" alt="Image Description">
-        <div class="text-content">
-          <h1>Welcome to our<br>
-            brand's journey</h1>
-          <p>
-            Walk with us through tales of origin, love, and inspiration. Let your creativity soar as we craft stories together. The way we share our narrative can spark magic. No need for formalities - be authentically you!
-          </p>
-        </div>
+      <div class="navigation">
+        <span class="story">
+          <div class="s"><a href="#">Our Story</a></div>
+        </span>
+
+        <span class="log">
+          <div class="l"><a href="#">Login</a></div>
+        </span>
+
+        <span class="search">
+          <div class="se">
+            <form action="#" method="get" class="search-bar">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+            </form>
+          </div>
+        </span>
+      
+
       </div>
-    </div>
-  </div>
-
+      
+  </header>
+  <main>
+    <div class="Welcome">
+      <section class="welcome-text">
+      <h1>Welcome to Journey Junction</h1>
+      <p>Come along on a delightful <br> adventure where stories unfold <br>and hearts unite.</p>
+        </section>
+    <section class="image">
+        </section>
+      </div>
+      <div class="favourites">
+        <section class="find-favorites">
+          <h2>Find your favourites</h2>
+          <ul>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Photography</a></li>
+              <li><a href="#">Home Decor</a></li>
+          </ul>
+      </section>
+      </div>
+      
+  </main>
   <div class="footer">
-    <p>&copy; 2024 Journey Junction. All Rights Reserved.</p>
-    <a href="#">Contact Us</a> |
-    <a href="#">Privacy Policy</a> |
-    <a href="#">Social Media</a>
+    <footer>
+      <p>Copyright &copy; 2024 Journey Junction</p>
+      <p>Contact Info</p>
+  </footer>
   </div>
-
+  
 </body>
 </html>
 
