@@ -4,14 +4,12 @@ body {
     padding: 0;
   }
 
-  header{
-    border-style: solid;
-  }
+ 
 
   header img {
     max-width: 150px; 
     height: auto; 
-    border-style: solid; 
+     
   }
 
   h1, h2, h3 {
