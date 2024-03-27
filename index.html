@@ -16,11 +16,32 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Signup</a></li>
+        <li><a href="#" id="loginLink">Login</a></li>
+        <li><a href="#" id="signupLink">Signup</a></li>
       </ul>
     </nav>
   </header>
+
+<!--Registration form-->
+<form id="registrationForm" style="display: none">
+  <label for="registerUsername">Username:</label>
+  <input type="text" id="registerUsername" name="username" required />
+
+  <label for="registerPassword">Password:</label>
+  <input type="password" id="registerPassword" name="password" required />
+
+  <button type="submit">Sign up</button>
+</form>
+<!--Login form-->
+<form id="loginForm" style="display: none">
+  <label for="loginUsername">Username:</label>
+  <input type="text" id="loginUsername" name="username" required />
+
+  <label for="loginPassword">Password:</label>
+  <input type="password" id="loginPassword" name="password" required />
+
+  <button type="submit">Login</button>
+</form>
 
   <main>
     <section class="hero">
@@ -89,9 +110,8 @@
     <p>&copy; 2024 Journey Junction</p>
     <a href="#">Follow me on Social Media</a>
   </footer>
+  <script type="text/javascript" src="./js/register.js"></script> 
+  <script type="text/javascript" src="./js/login.js"></script>
 
-</body>
-
-
-  
+</body>  
 </html>
