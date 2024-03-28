@@ -8,7 +8,19 @@ signupLink.addEventListener("click", function (event) {
   event.preventDefault();
   // Show the reg form
   registrationForm.style.display = "block";
+  // Close login form if it is opened
+  const loginForm = document.getElementById("loginForm");
+  loginForm.style.display = "none";
+  document.querySelector(".overlay-login").style.display = "none";
 });
+
+// Find a button to close the form and add the event to close it
+document
+  .getElementById("closeRegistrationForm")
+  .addEventListener("click", function () {
+    document.getElementById("registrationForm").style.display = "none";
+    document.querySelector(".overlay-registration").style.display = "none";
+  });
 
 registrationForm.addEventListener("submit", function (event) {
   //

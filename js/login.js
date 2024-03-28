@@ -7,7 +7,18 @@ document.addEventListener("DOMContentLoaded", function () {
   loginLink.addEventListener("click", function (event) {
     event.preventDefault();
     loginForm.style.display = "block";
+    // Close registration form if it is opened
+    const registrationForm = document.getElementById("registrationForm");
+    registrationForm.style.display = "none";
+    document.querySelector(".overlay-registration").style.display = "none";
   });
+  // Find a button to close the form and add the event to close it
+  document
+    .getElementById("closeLoginForm")
+    .addEventListener("click", function () {
+      document.getElementById("loginForm").style.display = "none";
+      document.querySelector(".overlay-login").style.display = "none";
+    });
 
   // add eventlistener for "submit" form
   loginForm.addEventListener("submit", function (event) {
