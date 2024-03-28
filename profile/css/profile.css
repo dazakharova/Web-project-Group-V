@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background: linear-gradient(to right, #8f39db, #dd8cef);
+    background: rgb(214, 215, 222);
   }
   
   header img {
@@ -19,7 +19,7 @@ body {
   }
   
   h1 {
-    color: #fff;
+    color: #6f42c1;
     font-family: Georgia, serif;
   }
   
@@ -39,7 +39,7 @@ body {
 
   
   nav a {
-    color: #302f2f;
+    color: #6f42c1;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -167,7 +167,7 @@ body {
   footer {
     text-align: center;
     padding: 10px;
-    background-color: #2c0733;
+    background-color: #544557;
   }
   
   footer p {
@@ -176,6 +176,6 @@ body {
   
   footer a {
     color: #ffffff;
-    font-weight: bold; /* Make the social media link stand out */
+    font-weight: bold; 
   }
   
